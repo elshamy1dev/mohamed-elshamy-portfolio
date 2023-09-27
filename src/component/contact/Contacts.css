@@ -1,0 +1,128 @@
+.title h2 span {
+    color: var(--color-primary);
+    border-bottom: 1px solid rgb(81, 81, 205);
+}
+
+.contact-container {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.contact-option {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--color-primary);
+    transition: .3s ease;
+    box-shadow: 0px 0px 20px 1px #4db5ff;
+}
+
+.contact-option:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.contact-option h3 {
+    font-size: 20px;
+}
+
+.contact-option h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.icon-contact {
+    font-size: 25px;
+}
+
+
+.send-message {
+    color: var(--color-light);
+    display: inline-block;
+}
+
+
+/* Form  */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.full-name {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 7px;
+    color: var(--color-light);
+    font-size: 17px;
+    resize: none;
+}
+
+@media (max-width: 909px) {
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    } 
+    form {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1352px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        width: var(--container-width-sm);
+    }
+}
+
+.btn-submit {
+    background-color: var(--color-bg-variant); /* لون الخلفية للزر */
+    color: #fff; /* لون النص داخل الزر */
+    border: none; /* إزالة حدود الزر */
+    padding: 10px 20px; /* هوامش داخلية للزر */
+    border-radius: 5px; /* تدريج زوايا الزر */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    animation: moveRightAndLeft 2s linear infinite;
+}
+
+.btn-submit:hover {
+    background: transparent;
+    border: 1px solid var(--color-bg-variant);
+}
+
+@keyframes moveRightAndLeft {
+    0%, 100% {
+      transform: translateX(0); /* تأثير الانتقال لليمين واليسار يبدأ من الوضع الأصلي */
+    }
+    50% {
+      transform: translateY(15px); /* التحرك لليمين بمقدار 20 بكسل */
+    }
+}
+
