@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "homePage": "http://elshamy1dev.githup.io/elshamy_portfolio",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.1",
     "emailjs-com": "^3.2.0",
-    "gh-pages": "^6.0.0",
     "html-react-parser": "^4.2.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
@@ -26,8 +24,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
